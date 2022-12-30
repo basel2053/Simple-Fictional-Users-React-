@@ -1,6 +1,6 @@
 import Button from './UI/Button';
 
-const ErrorModal = (props: { gotTheError: Function; errorContent: string }) => {
+const ErrorModal = (props: { gotTheError: React.MouseEventHandler; errorContent: string }) => {
 	return (
 		<div>
 			<div className='w-screen h-screen fixed z-10 top-0 left-0 bg-black opacity-60'></div>

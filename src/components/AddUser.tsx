@@ -16,6 +16,7 @@ const AddUser = (props: { onAddUser: Function }) => {
 		e.preventDefault();
 		if (+inputs.age < 0) {
 			setErrContent('Please enter a valid age(> 0)');
+			setHasError(!hasError);
 		} else if (!(inputs.username && inputs.age)) {
 			setErrContent('Please enter a valid name and age (non-empty values).');
 			setHasError(!hasError);
